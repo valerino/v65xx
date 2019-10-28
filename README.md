@@ -15,8 +15,13 @@ my MOS 6502/6510/65xxx emulator/interpreter!
 git clone https://github.com/valerino/v65xx
 cd v65xx
 
-# needs https://github.com/valerino/emushared library
-export EMUSHARED_LIB_PATH=/path/to/emushared/build
+# clone also the following repo
+# (no submodules on purpose, they're evil and just add complexity, period.)
+git clone https://github.com/valerino/emushared
+
+# cd into emushared, follow build instructions in its README.md (including setting up environment variables)
+
+# get back to v65xx folder and build
 mkdir build && cd build
 cmake ..
 make
