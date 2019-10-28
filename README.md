@@ -18,6 +18,12 @@ cd v65xx
 # needs https://github.com/valerino/emushared library
 export EMUSHARED_LIB_PATH=/path/to/emushared/build
 mkdir build && cd build
+cmake ..
+make
+
+# setup environment variables to be used in external projects
+export V65XX_INCLUDE_PATH=/path/to/v65xx
+export V65XX_LIB_PATH=/path/to/v65xx/build
 ~~~
 
 ## sample usage
