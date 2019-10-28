@@ -1,0 +1,7 @@
+cmake-build-*
+build
+tags
+.DS_Store
+
+#repo specific
+test/**
