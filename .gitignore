@@ -2,6 +2,8 @@ cmake-build-*
 build
 tags
 .DS_Store
+.vscode
+*.code-workspace
 
 #repo specific
 test/**
